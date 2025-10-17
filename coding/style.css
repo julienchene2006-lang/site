@@ -1,0 +1,429 @@
+
+.Roboto{/*police Roboto*/
+    font-family: "Roboto", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{/*corps de la page*/
+    background-color: white;
+}
+
+head{ 
+    display: flex;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+
+.presentation-contenu{/*bannière__presentation*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-1{/*bannière__bloc1/logo*/
+    width: calc( 80% / 7 );
+    height: 100px;
+}
+
+.logo1{/*bannière__parametre logo*/
+    position: relative;
+    background-color: white;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.bloc-2{/*bannière__bloc2/accueuil*/
+    width: calc( 100% / 7 );
+    height: 150px;
+}
+
+.bloc-3{/*bannière__bloc3/carte*/
+    width: calc( 85% / 6 );
+    height: 75px;
+}
+
+.bloc-4{/*bannière__bloc4/boutique*/
+    width: calc( 85% / 6 );
+    height: 75px;
+}
+
+.bloc-5{/*bannière__bloc5/info*/
+    width: calc( 100% / 6 );
+    height: 75px;
+}
+
+button {/*bannière__parametre button*/
+    margin: 40px;
+    width: 200px;
+    font-size: 2.1rem;
+    line-height: 2;
+    border-radius: 20px;/*bord*/
+    color : #000000;/*couleur texte*/
+    background-image:rgb(255, 255, 255);
+
+}
+
+.bloc-6{/*bannière__bloc6/barre_de_recherche*/
+    width: calc( 110% / 6 );
+    height: 75px;
+}
+
+.loupe{  /*bannière__parametre loupe*/
+    margin: 40px;
+    width: 200px;     
+}
+
+.bloc-7{/*bannière__bloc7/barre*/
+    width: calc( 40% / 6 );
+    height: 75px;
+}
+.bloc-8{
+    height: 650px;
+}
+.bloc-15{
+    height: 150px;
+}
+
+/* === Carrousel d’images fixes  */
+.slider {
+    
+  position: relative;
+  width: 1550px;
+  height: 400px; /* même hauteur que bloc-8 */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+
+/* === Carrousel avec texte === */
+.slider {
+  position: relative;
+  width: 1550px;
+  height: 500px; /* Ajuste selon ton image */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slide {/*paramètre image*/
+    border: 4px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texte (caption) sur l’image */
+.caption {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 40%;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.caption h2 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+
+
+
+.trait{  /*bannière__parametre barre*/
+    margin: 20px;
+    width: 100px;     
+}
+
+.image_accueil{/*paramètre_image_accueil*/
+    height: 700px;
+    width: 1700px; 
+    border: 5px solid black;
+}
+
+
+
+
+
+/*---------------------------------------------milieu_page---------------------------------------------*/
+
+.milieu{/*paramètre_milieu_page*/
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.bloc-10{/*milieu_page_bloc10/fond_rond*/
+    width: calc( 10% / 3 ); 
+    height: 100px;
+}
+
+    .fond_rond{
+        height: 550px;
+        width: 1600px;
+    } 
+
+    .fond_rond2{
+    height: 550px;
+    width: 1600px;
+    } 
+
+    .fond_noir{
+    height: 100px;
+    width: 1600px;   
+    background-color: black;
+    } 
+
+/*-----------------------------------------milieu_page(catégorie)--------------------------------------*/
+
+.bloc-12{/*milieu_page_bloc12/image_categorie1*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 400px;
+    margin: 55px;
+    padding: 5px;
+    border: 4px solid black;
+    border-radius: 20px;/*bord*/ 
+}
+
+    .bloc-12:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .image_categorie1{/*paramètre_image_categorie1*/
+        background: 200px;
+        height: 200px;
+        width: 365px; 
+        border: 5px solid black;
+    }
+
+.bloc-13{/*milieu_page_bloc13/image_categorie2*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 400px;
+    margin: 55px;
+    padding: 5px;
+    border: 4px solid black;
+    border-radius: 20px;/*bord*/    
+}
+
+    .bloc-13:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .image_categorie2{/*paramètre_image_categorie2*/
+        height: 200px;
+        width: 365px; 
+        border: 5px solid black;
+    }
+
+.bloc-14{/*bannière__bloc10/image_categorie3*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 400px;
+    margin: 55px;
+    padding: 5px;
+    border: 4px solid black;
+    border-radius: 20px;/*bord*/    
+}
+
+    .bloc-14:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .image_categorie3{/*paramètre_image_categorie3*/
+        height: 200px;
+        width: 365px; 
+        border: 5px solid black;
+    }
+
+    .paragraphe2{/*paramètre_paragraphe2*/
+        font-size: 24px;
+        border-radius: 10px;/*bord*/
+        color :black;/*couleur texte*/ 
+    }
+
+.bloc-16{/*milieu_page_bloc16/carte1*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+
+    .bloc-16:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .carte1{/*paramètre_image_carte1*/
+        background: 200px;
+        height: 500px;
+        width: 365px;     
+    }
+
+.bloc-17{/*milieu-page_bloc17/carte2*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+   
+    .bloc-17:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .carte2{/*paramètre_image_carte2*/
+        background: 200px;
+        height: 500px;
+        width: 365px;     
+    }
+
+.bloc-18{/*milieu_page_bloc18/carte3*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+    .bloc-18:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .carte3{/*paramètre_image_carte3*/
+        background: 200px;
+        height: 500px;
+        width: 365px;    
+    }
+
+.bloc-19{/*Milieu_page_bloc19/carte4*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+    .bloc-19:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+
+    .carte4{/*paramètre_image_carte4*/
+        background: 200px;
+        height: 500px;
+        width: 365px; 
+    }
+
+.bloc-20{/*milieu_page_bloc20/carte5*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+    .bloc-20:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+    .carte5{/*paramètre_image_carte5*/
+        background: 200px;
+        height: 500px;
+        width: 365px;     
+    }
+
+.bloc-21{/*milieu_page_bloc21/carte6*/
+    background-color: white;
+    width: calc(100%/4);
+    height: 500px;
+    margin: 55px;
+    padding: 5px;
+}
+    .bloc-21:hover{/*souris_aug_taille*/
+        transform: scale(1.1);
+    }
+    .carte6{/*paramètre_image_carte6*/
+        background: 200px;
+        height: 500px;
+        width: 365px;    
+    }
+
+/*------------------------------------------------footer-----------------------------------------------*/
+footer{/*paramètre_pied_page*/
+    border: 4px solid black;
+    background-color: black;
+    height: 180px;/*hauteur_pied_page*/
+}
+
+.footer-contenu{/*pied_page_contenu*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloc-22{/*pied_page__bloc22/logo2*/
+    width: calc( 25% / 2 );
+    height: 75px;
+}
+
+.logo2{/*pied_page/parametre logo2*/
+    
+    position: relative;
+    background-color: white;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.bloc-23{/*pied_page_bloc23/paramètre contact*/
+    width: calc(20%/2);
+}
+.contact{
+    position: relative;
+    object-fit: cover;
+    margin: 35px;
+    height: 100px;
+    width: 150px;
+    color: white;
+}
+
+
+
+
+
+
+
+
